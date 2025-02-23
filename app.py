@@ -25,6 +25,7 @@ fig = px.choropleth(
 fig.update_layout(geo=dict(bgcolor='rgba(0,0,0,0)'))
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("US Consumer Spending per Capita"),
